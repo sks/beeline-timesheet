@@ -1,0 +1,18 @@
+{
+  "name": "timesheet",
+  "version": "0.0.1",
+  "description": "Some way to automate the timesheet filling against beeline",
+  "main": "yarn start",
+  "repository": "https://github.com/sks",
+  "author": "sabithksme@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "cypress": "^3.3.1"
+  },
+  "scripts": {
+    "start": "cypress open",
+    "cy:run": "cypress run --spec 'cypress/integration/fill_in_timesheet_spec.js'",
+    "dockerize": "docker build -t sabithksme/timesheet:beeline ."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://prod.beeline.com/company",
+  "creds": {
+    "username": "someone@example.com",
+    "password": "my_awesome_password"
+  },
+  "timesheet": [
+    {
+      "market": "some_market",
+      "project": "something"
+    }
+  ]
+}
