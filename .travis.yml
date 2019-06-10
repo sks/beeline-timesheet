@@ -1,0 +1,14 @@
+services:
+- docker
+before_install:
+- yarn install
+script:
+- yarn dockerize
+deploy:
+- provider: script
+  script: docker login -u $DOCKER_USERNAME -p $DOCKER_PASS && docker push sabithksme/timesheet:latest
+  on:
+    branch: master
+env:
+  global:
+    secure: EfBQUhER8sokdveNRSrMif0Eh8Jo1JtYZfbXbHG/eXeQC+Ur/uGIVnJxWDBvlJstoTGOtLppjZE4c/rk3TBaAMV1f5FvO8yt9wfNeGEzeusFdoKWlC4ywIwMPDdSRlWPtC9qYBMPJTAFcnrzYkmXD6E8zktfnkRjUdFkBo7dDMrj0kIVqVnhwCYE7pr60TepdBXpe8CJci1Vv3HFvZJOphLBjLXoo2zgj4djDsgf7YIuPcyCtynAre/cJSTfq3uCBjDJ780I44g0FqFeERJ6HtcIuLuE44UZKXcbsUXsC9BBaRe1wGo+xGw1raQW2VA7zLcBqqm2zFbhcTVcUDcwu8bGODY9sWRoMl1j2m6Y8sdvUVPD1noyn0K8n4wvSAg3+sBQUVVVjLfYeLMFfpPLydtN2fLfKxax5Yx5Lkp89uhGq1RoZiZsJf+mZurIEowTgWUDVNHOiGH3JdvzGJAGQ0eZHo+O7HO8QN0CHJfyd1H/13zqyjm2Wy6JItim0tYyyLHmpfnsb11gl6MPLKmzb4fsH7CNNcBjbZOqNmQxrZjkmmB6heR7TfyS6U60lkdxV2nDJy5b/hkq6NRyrKPum5JUVaDdQ6U7spzvLn75GIezR+L77500OlKq51AL/q6AAbrFrflWrQeWeLI62Cw0TkRIo9RDdQF0Z7Wg6zlH4Xc=

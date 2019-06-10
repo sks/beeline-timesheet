@@ -1,5 +1,7 @@
 # Timesheet Autofiller
 
+[![Build Status](https://travis-ci.org/sks/timesheet.svg?branch=master)](https://travis-ci.org/sks/timesheet)
+
 A cypress automation that would fill in the [beeline](https://www.beeline.com/) / [fieldglass](https://www.fieldglass.net) timesheets.
 
 ## Usage
@@ -20,7 +22,10 @@ yarn ${TIMESHEET} -- --config fixturesFolder=my_fixtures/
 
 ```sh
 
+
 export TIMESHEET="fieldglass" # or beeline
+
+## Create the config files in my_fixtures folder
 
 ## Beeline timesheet
 docker run --rm \
