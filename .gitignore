@@ -3,3 +3,4 @@ cypress/screenshots/
 my_fixtures/config.json
 cypress/videos/
 videos/
+my_fixtures/fieldglass_config.json

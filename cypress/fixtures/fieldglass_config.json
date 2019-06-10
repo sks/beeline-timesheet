@@ -1,0 +1,13 @@
+{
+    "url": "https://www.fieldglass.net",
+    "creds": {
+      "username": "my_awesome_username",
+      "password": "my_awesome_password"
+    },
+    "timesheet": {
+        "time_in": "08:00 AM",
+        "time_out": "05:00 PM",
+        "out_for_lunch": "12:00 PM",
+        "back_from_lunch": "01:00 PM"
+    }
+  }

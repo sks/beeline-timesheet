@@ -8,7 +8,7 @@ describe('Filling in the timesheet', () => {
             done();
         });
     })
-    it('goes to beeling website and waits for the input to be visible', () => {
+    it('goes to beeline website and waits for the input to be visible', () => {
         console.log(`Logging into ${config.url}`);
         cy.visit(config.url);
         cy.get('#beelineForm_UserLoginForm_userNameText').click();
@@ -24,7 +24,7 @@ describe('Filling in the timesheet', () => {
             cy.get("#Assignment_0_AssignmentDetail_0_TimesheetRowGroup_1_Task_0_ProjectComboSelector_ItemsDiv").click();
             cy.get("#Assignment_0_AssignmentDetail_0_TimesheetRowGroup_1_Task_0_TaskComboSelector_Input").type(t.project);
             cy.get("#Assignment_0_AssignmentDetail_0_TimesheetRowGroup_1_Task_0_TaskComboSelector_beelineComboSelectorItem_73270_Onboarding_Lots").click();
-            for(let i=0;i<5;i++){
+            for (let i=0; i<5; i++) {
                 cy.get(`#Assignment_0_AssignmentDetail_0_TimesheetRowGroup_1_Task_0_EntryTextBox_${i}`).click();
                 cy.get("#timesheetEntryControl_TimeInTextBox").type("08:00 AM");
                 cy.get("#timesheetEntryControl_TimeOutTextBox").type("04:30 PM");

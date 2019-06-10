@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "cypress open",
-    "cy:run": "cypress run --spec 'cypress/integration/fill_in_timesheet_spec.js'",
-    "dockerize": "docker build -t sabithksme/timesheet:beeline ."
+    "beeline": "cypress run --spec 'cypress/integration/beeline_timesheet.js'",
+    "fieldglass": "cypress run --spec 'cypress/integration/fieldglass.js'",
+    "dockerize": "docker build -t sabithksme/timesheet:latest ."
   }
 }
