@@ -1,6 +1,7 @@
 # Timesheet Autofiller
 
 [![Build Status](https://travis-ci.org/sks/timesheet.svg?branch=master)](https://travis-ci.org/sks/timesheet)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsks%2Ftimesheet.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsks%2Ftimesheet?ref=badge_shield)
 
 A cypress automation that would fill in the [beeline](https://www.beeline.com/) / [fieldglass](https://www.fieldglass.net) timesheets.
 
@@ -34,3 +35,7 @@ docker run --rm \
     -v $PWD/screenshots:/screenshots \
     sabithksme/timesheet:latest yarn ${TIMESHEET} --config "fixturesFolder=/fixtures,videosFolder=/videos,screenshotsFolder=/screenshots"
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsks%2Ftimesheet.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsks%2Ftimesheet?ref=badge_large)
